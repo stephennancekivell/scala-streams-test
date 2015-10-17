@@ -2,6 +2,10 @@ Background
 ----------
 This is a simple app to generate and parse weather balloon data.
 
+Usage
+-----
+Run this program with `sbt run` then `sbt run gen` or `sbt run parse`
+
 Approach
 --------
 Parsing, is done using lots of Try's generating a Iterator[Try[Row]]. Invalid rows are ignored by the flatMap, however in a real world situation these should be monitored.
